@@ -31,6 +31,7 @@ app.on('ready', createWindow)
 
 // Quit when all windows are closed.
 app.on('window-all-closed', function () {
+  app.quit()
 })
 
 app.on('activate', function () {
