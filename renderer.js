@@ -6,6 +6,6 @@ const Vue = require('vue/dist/vue.common.js')
 const app = new Vue({
     el: '#app',
     data: {
-        message: 'Hello vue',
+        node_version: process.versions.node
     }
 })
