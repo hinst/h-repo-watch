@@ -1,11 +1,11 @@
 {
     "compilerOptions": {
         "target": "es5",
-        "sourceRoot": "src",
+        "sourceRoot": "../src/",
         "module": "commonjs",
         "sourceMap": true,
-        "outDir": "dist",
         "mapRoot": "../dist/dist",
-        "inlineSources": true
+        "rootDir": "src",
+        "outDir": "dist"
     }
 }
