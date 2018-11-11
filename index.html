@@ -8,21 +8,16 @@
 </head>
 <body>
   <!-- All of the Node.js APIs are available in this renderer process. -->
-  <script>document.write(process.versions.node)</script>,
-  Chromium
-  <script>document.write(process.versions.chrome)</script>,
-  and Electron
-  <script>document.write(process.versions.electron)</script>.
-  heh
-  <div id="app">
+  <div id="app" class="w3-container">
     <div style="display:flex; justify-content: space-between">
       <h1>H-Repo-Calendar</h1>
-      <button class="w3-btn w3-black" title="Show debug info">?</button>
+      <button class="w3-btn w3-black" title="Show debug info" v-on:click="toggleDebugInfo">?</button>
     </div>
-    {{ message }}
-    <div v-if="debug-info-visible">
+    <div v-if="debugInfoVisible" class="w3-panel w3-border">
       <list>
-        <li>{{node_version}}</li>
+        <li>Node: {{nodeVersion}}</li>
+        <li>Chrome: {{chromeVersion}}</li>
+        <li>Electron: {{electronVersion}}</li>
       </list>
     </div>
   </div>
