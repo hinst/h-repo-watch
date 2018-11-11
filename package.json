@@ -20,6 +20,9 @@
     "electron": "^3.0.4"
   },
   "dependencies": {
+    "source-map-support": "^0.5.9",
+    "src": "^1.1.2",
+    "tsc": "^1.20150623.0",
     "vue": "^2.5.17"
   }
 }
